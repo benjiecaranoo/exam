@@ -10,28 +10,9 @@ use Maatwebsite\Excel\Facades\Excel;
   
 class MyController extends Controller
 {
-    // /**
-    // * @return \Illuminate\Support\Collection
-    // */
-    // public function importExportView()
-    // {
-    //    return view('import');
-    // }
-   
-    // /**
-    // * @return \Illuminate\Support\Collection
-    // */
-    // public function export() 
-    // {
-    //     return Excel::download(new PasserListExport, 'users.xlsx');
-    // }
-   
-    // /**
-    // * @return \Illuminate\Support\Collection
-    // */
+
     public function import() 
     {
          Excel::import(new PasserDataImport,public_path('excel/convertcsv.xlsx'));
-        //return back();
     }
 }

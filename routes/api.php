@@ -16,3 +16,8 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('passers', 'PassersController@index');
+Route::get('passers/{search}', 'PassersController@show');
+Route::post('passers', 'PassersController@store');
+Route::get('passers/list/school', 'PassersController@topSchool');

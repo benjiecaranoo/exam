@@ -17,6 +17,8 @@ window.Vue = require('vue');
 
 Vue.component('navbar', require('./components/Nav/Nav.vue'));
 Vue.component('list', require('./components/PassersList/List.vue'));
+Vue.component('top-school-list', require('./components/TopSchool/TopSchool.vue'));
+
 const app = new Vue({
     el: '#app'
 });

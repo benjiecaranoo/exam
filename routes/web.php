@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-#Route::get('export', 'MyController@export')->name('export');
-#Route::get('importExportView', 'MyController@importExportView');
+Route::get('/top-school-list', function () {
+    return view('top-school-list');
+});
 Route::get('import', 'MyController@import')->name('import');

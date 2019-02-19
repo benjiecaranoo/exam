@@ -2,7 +2,7 @@
 
 namespace App\Imports;
 
-use App\Passer;
+use App\Passers;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class PasserDataImport implements ToModel
@@ -14,7 +14,7 @@ class PasserDataImport implements ToModel
     */
     public function model(array $row)
     {
-        return new Passer([
+        return new Passers([
             'name_of_examinee'     => $row[1],
             'campus_eligibility'    => $row[2], 
             'school' => $row[3],
