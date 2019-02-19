@@ -14,6 +14,9 @@
         <div class="container">
             <div id="app">
                 <navbar></navbar>
+                <section class="text-center" style="font-size: 12px; text-align: left;">
+                <p>* Due to Data Privary Act, there are 43 principal qualifiers who signified NOT to announce their name publicly.  They will receive an email and call from the campus where they are qualified to enroll.
+                </p><br>&nbsp;</section>
                 <list></list>
             </div>
         </div>
