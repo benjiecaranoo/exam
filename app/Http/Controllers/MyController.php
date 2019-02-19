@@ -13,10 +13,10 @@ class MyController extends Controller
     // /**
     // * @return \Illuminate\Support\Collection
     // */
-    // public function importExportView()
-    // {
-    //    return view('import');
-    // }
+    public function importExportView()
+    {
+       return view('import');
+    }
    
     // /**
     // * @return \Illuminate\Support\Collection
@@ -31,10 +31,9 @@ class MyController extends Controller
     // */
     public function import() 
     {
-        //echo "asdfasdf"
-     //   echo );
-        Excel::import(new PasserDataImport,public_path('excel/passers.xlsx'));
-           
+
+        $data = Excel::import(new PasserDataImport,public_path('excel/passers.xlsx'));
+        
         //return back();
     }
 }
