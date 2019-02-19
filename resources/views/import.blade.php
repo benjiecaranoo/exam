@@ -10035,22 +10035,22 @@ table{
 .column{display:table-cell;}
 </style>
 <script>
-var body=document.body,
-    parent=body.querySelector(".table"),
-    rows=parent.querySelectorAll(".row"),
-    table=document.createElement("table"),
-    tbody=document.createElement("tbody"),
-    row=document.createElement("tr"),
-    cell=document.createElement("td"),
-    x=rows.length,
-    cells=rows[0].querySelectorAll(".column"),
-    y=cells.length,
+var body   = document.body,
+    parent = body.querySelector(".table"),
+    rows   = parent.querySelectorAll(".row"),
+    table  = document.createElement("table"),
+    tbody  = document.createElement("tbody"),
+    row    = document.createElement("tr"),
+    cell   = document.createElement("td"),
+    x      = rows.length,
+    cells  = rows[0].querySelectorAll(".column"),
+    y      = cells.length,
     i,j;
 table.appendChild(tbody)
 for(i=0;i<x;i++){
-    row=row.cloneNode(0);
-    cells=rows[i].querySelectorAll(".column");
-    y=cells.length;
+    row   = row.cloneNode(0);
+    cells = rows[i].querySelectorAll(".column");
+    y     = cells.length;
     for(j=0;j<y;j++){
         cell=cell.cloneNode(0);
         cell.innerHTML=cells[j].innerHTML;
