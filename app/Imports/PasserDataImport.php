@@ -14,20 +14,12 @@ class PasserDataImport implements ToModel
     */
     public function model(array $row)
     {
-        echo "<pre>";
-        print_r($row);
-        // foreach($row as $key => $value){
-            
-        //     if(isset($value)){
-               
-        //     }
-        // }
-        // return new Passer([
-        //     'name_of_examinee'     => $value,
-        //     'campus_eligibility'    => $value, 
-        //     'school' => $value,
-        //     'division' => $value,
-        // ]);
+        return new Passer([
+            'name_of_examinee'     => $row[1],
+            'campus_eligibility'    => $row[2], 
+            'school' => $row[3],
+            'division' => $row[4],
+        ]);
 
       
     }
